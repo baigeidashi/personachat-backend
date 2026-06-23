@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: personachat-backend
+    runtime: python
+    rootDir: promo-backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PERSONACHAT_CORS_ORIGINS
+        sync: false
+      - key: PERSONACHAT_ENABLE_GPTSOVITS
+        value: false
+      - key: PERSONACHAT_ALLOW_LOCAL_VIDEO
+        value: false
