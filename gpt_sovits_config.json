@@ -1,0 +1,19 @@
+{
+  "enabled": false,
+  "work_dir": "",
+  "python_exe": "",
+  "api_script": "api_v2.py",
+  "port": 9880,
+  "host": "127.0.0.1",
+  "tts_config": "GPT_SoVITS/configs/tts_infer.yaml",
+  "auto_start": false,
+  "startup_timeout_sec": 180,
+  "default_model": {
+    "gpt_weights": "",
+    "sovits_weights": "",
+    "ref_audio_path": "",
+    "ref_text": "",
+    "prompt_lang": "ja",
+    "text_lang": "auto_ja"
+  }
+}
